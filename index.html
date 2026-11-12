@@ -36,9 +36,16 @@ nav span{display:block;font-size:19px;margin-bottom:4px}
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
 .notice{background:#332b1b;border:1px solid #66512b;color:#f5d99f;padding:12px;border-radius:10px;font-size:12px;line-height:1.5}
 </style>
+  <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .catch(error => console.error(error));
+  });
+}
+  </script>
 </head>
 <body>
-
 <header>
 <div style="color:#36d69b;font-size:12px;font-weight:bold">GESTÃO PROFISSIONAL</div>
 <h1>🚛 Meu Gestor de Estrada</h1>
