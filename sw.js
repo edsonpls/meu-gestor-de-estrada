@@ -1,5 +1,5 @@
 
-const CACHE = "gestor-estrada-v2";
+const CACHE = "gestor-estrada-v3";
 
 const FILES = [
   "./",
